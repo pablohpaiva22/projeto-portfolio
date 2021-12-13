@@ -9,7 +9,7 @@
     left: 24px;
 }
 
-.footer-grid {
+.footer-inf {
     max-width: 1200px;
     padding: 120px 20px;
     margin: 0 auto;
@@ -20,23 +20,23 @@
     position: relative;
 }
 
-.footer-grid h1 {
+.footer-inf h1 {
     font-size: 1.40rem;
     line-height: 1.35;
     color: rgb(172, 172, 172);
 }
 
-.footer-inf {
+.footer-contact {
     display: grid;
     font-size: 1.65rem;
 }
 
-.footer-grid h2,
-.footer-grid a {
+.footer-inf h2,
+.footer-inf a {
     margin-bottom: 24px;
 }
 
-.footer-inf a {
+.footer-contact a {
     color: white;
 }
 
@@ -49,15 +49,15 @@
 }
 
 @media(max-width: 800px) {
-    .footer-grid {
+    .footer-inf {
         grid-template-columns: 1fr;
         gap: 32px;
         padding-bottom: 24px;
     }
-    .footer-inf {
+    .footer-contact {
         font-size: 1.1rem;
     }
-    .footer-inf a {
+    .footer-contact a {
         font-size: 1.45em;
     }
 }

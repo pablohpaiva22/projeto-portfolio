@@ -12,12 +12,12 @@
     gap: 100px;
 }
 
-.formacao-1 {
+.formacao-texto {
     font-size: 8rem;
     word-break: break-all;
 }
 
-.formacao-2-1 {
+.formacao-description {
     max-width: 550px;
     margin-bottom: 50px;
     font-size: 1.6rem;
@@ -25,64 +25,68 @@
     color: rgb(136, 132, 132);
 }
 
-.formacao-2-1 span {
+.formacao-description span {
     color: white;
 }
 
-.formacao-2-2 {
+.formacao-formacoes {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 72px;
     gap: 8px;
 }
 
-.formacao-2-2 li {
+.formacao-formacoes li {
     background: black;
-    padding: 24px;
     color: white;
     flex-grow: 1;
     flex-basis: 0;
     position: relative;
+    padding: 20px;
+    display: grid;
+
 }
 
-.formacao-2-2 li::before {
+.formacao-formacoes li::before {
     content: "";
     width: 4px;
     height: 24px;
     background: linear-gradient(to bottom, rgb(125, 255, 125), rgb(67, 204, 67));
     position: absolute;
     left: -4px;
+    top: 50px;
 }
 
-.formacao-2-2 li h3 {
+.formacao-formacoes li h3 {
     font-size: 0.9rem;
     font-weight: lighter;
     color: rgb(172, 172, 172);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-.formacao-2-2 li h2 {
+.formacao-formacoes li h2 {
     font-size: 1.1rem;
     font-weight: normal;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
-.formacao-2-2 li p {
+.formacao-formacoes li p {
     color: rgb(172, 172, 172);
+    align-self: end;
 }
 
-.formacao-2-3 {
+.formacao-cursos-intensivos {
     margin-bottom: 48px;
     position: relative;
 }
 
-.formacao-2-3 h3 {
+.formacao-cursos-intensivos h3 {
     color: rgb(172, 172, 172);
     margin-bottom: 24px;
     font-size: 0.90rem;
 }
 
-.formacao-2-3 div {
+.formacao-cursos-intensivos div {
     display: flex;
     justify-content: space-between;
     color: white;
@@ -91,33 +95,33 @@
     gap: 16px;
 }
 
-.formacao-2-3 div p:last-child {
+.formacao-cursos-intensivos div p:last-child {
     color: rgb(172, 172, 172);
 }
 
-.formacao-2-4 {
+.formacao-idiomas {
     margin-bottom: 24px;
     position: relative;
 }
 
-.formacao-2-4 span {
+.formacao-idiomas span {
     color: rgb(172, 172, 172);
 }
 
-.formacao-2-4 h3 {
+.formacao-idiomas h3 {
     color: rgb(172, 172, 172);
     font-size: 0.90rem;
     margin-bottom: 24px;
 }
 
-.formacao-2-4 p {
+.formacao-idiomas p {
     color: white;
     margin-bottom: 12px;
     font-size: 1.1rem;
 }
 
-.formacao-2-3 img,
-.formacao-2-4 img {
+.formacao-cursos-intensivos img,
+.formacao-idiomas img {
     position: absolute;
     left: -36px;
     top: -5px;
@@ -129,20 +133,20 @@
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    .formacao-1 {
+    .formacao-texto {
         font-size: 3rem;
         color: white;
         text-transform: lowercase;
     }
-    .formacao-2-1 {
+    .formacao-description {
         font-size: 1.3rem;
         max-width: 450px;
     }
-    .formacao-2-3 {
+    .formacao-cursos-intensivos {
         margin-bottom: 96px;
     }
-    .formacao-2-3 img,
-    .formacao-2-4 img {
+    .formacao-cursos-intensivos img,
+    .formacao-idiomas img {
         left: 0px;
         top: -32px;
     }
