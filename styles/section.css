@@ -1,4 +1,4 @@
-.section {
+.experiencia {
     display: grid;
     grid-template-columns: 1fr 2fr;
     max-width: 1200px;
@@ -9,42 +9,26 @@
     gap: 100px;
 }
 
-.section-1 {
+.experiencia-1 {
     font-size: 7rem;
     word-break: break-all;
     color: #d7d7d7;
 }
 
-.section-2-1 {
+.experiencia-2-1 {
+    max-width: 550px;
     font-size: 1.5rem;
     margin-bottom: 60px;
     color: rgba(0, 0, 0, 0.7);
 }
 
-
-@media(max-width: 800px) {
-    .section {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .section-1 {
-        font-size: 2.3rem;
-        color: black;
-        text-transform: lowercase;
-    }
-    .section-2-1 {
-        margin-right: 250px;
-        font-size: 1.3rem;
-    }
-}
-
-.section-2-1 span {
+.experiencia-2-1 span {
     font-weight: bold;
 }
 
-.section-2-2,
-.section-2-3,
-.section-2-4 {
+.experiencia-2-2,
+.experiencia-2-3,
+.experiencia-2-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #f7f7f7;
@@ -57,22 +41,22 @@
     position: relative;
 }
 
-.section-2 ul {
+.experiencia-2 ul {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     align-content: start;
 }
 
-.section-2 ul li {
+.experiencia-2 ul li {
     background: white;
     padding: 8px;
     border-radius: 4px;
 }
 
-.section-2-2::after,
-.section-2-3::after,
-.section-2-4::after {
+.experiencia-2-2::after,
+.experiencia-2-3::after,
+.experiencia-2-4::after {
     content: "";
     width: 4px;
     height: 24px;
@@ -80,4 +64,33 @@
     position: absolute;
     left: -4px;
     top: 16px;
+}
+
+@media(max-width: 800px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .experiencia-1 {
+        font-size: 2.3rem;
+        color: black;
+        text-transform: lowercase;
+    }
+    .experiencia-2-1 {
+        max-width: 500px;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .experiencia-2-2 {
+        grid-template-columns: 1fr;
+    }
+    .experiencia-2-3 {
+        grid-template-columns: 1fr;
+    }
+    .experiencia-2-4 {
+        grid-template-columns: 1fr;
+    }
 }
