@@ -13,6 +13,7 @@
     font-size: 7rem;
     word-break: break-all;
     color: #d7d7d7;
+    text-transform: uppercase;
 }
 
 .experiencia-descrition {
@@ -20,10 +21,6 @@
     font-size: 1.5rem;
     margin-bottom: 60px;
     color: rgba(0, 0, 0, 0.7);
-}
-
-.experiencia-descrition span {
-    font-weight: bold;
 }
 
 .experiencia1,
@@ -74,7 +71,7 @@
     .experiencia-texto {
         font-size: 2.3rem;
         color: black;
-        text-transform: lowercase;
+        text-transform: capitalize;
     }
     .experiencia-descrition {
         max-width: 500px;
